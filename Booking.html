@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Service</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Book Your Detailing</h1>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <form id="bookingForm">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="tel" name="phone" placeholder="Phone" required>
+    <select name="package" required>
+      <option value="">--Select Package--</option>
+      <option value="Interior Detail">Interior Detail</option>
+      <option value="Exterior Wash">Exterior Wash & Wax</option>
+      <option value="Paint Correction">Paint Correction</option>
+      <option value="Ceramic Coating">Ceramic Coating</option>
+    </select>
+    <input type="date" name="date" required>
+    <input type="time" name="time" required>
+    <textarea name="notes" placeholder="Additional notes..."></textarea>
+    <button type="submit">Submit Booking</button>
+  </form>
+
+  <script src="booking.js"></script>
+</body>
+</html>
